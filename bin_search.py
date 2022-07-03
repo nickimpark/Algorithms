@@ -1,8 +1,8 @@
 def bin_search(a, x):
     i = 0
-    j = len(a)-1
-    m = j // 2
-    while (a[m] != x) and i <= j:
+    j = len(a) - 1
+    m = (i + j) // 2
+    while (a[m] != x) and (i <= j):
         if x > a[m]:
             i = m + 1
         else:
